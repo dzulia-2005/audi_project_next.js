@@ -1,50 +1,12 @@
+
 "use client"
-import { useState } from "react"
 import  "./main.css"
 
-
-export default function Home() {
-
-  const [slides, setSlides] = useState([
-
-    { 
-      url: "/red-audi.jpeg" 
-    },
-
-    { 
-      url: "/audi2.avif"
-    },
-
-    { 
-      url: "/audi3.jpg"
-    }
-
-  ]);
-  
-
-
-  const [currentIndex, setcurrentIndex]=useState(0);
-
-  const prevSlide = ()=>{
-    const isfirstslide = currentIndex === 0;
-    const newIndex = isfirstslide ? slides.length-1 : currentIndex -1;
-    setcurrentIndex(newIndex);
-  }
-  const nextSlide = ()=>{
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setcurrentIndex(newIndex);
-  }
-  
-
-
-  
-
-  
-  return <div class="container">
-      <div class="back_img">
-        <div class="header-nav">
-        <div className="menunav">
+export default function page (){
+    return <div className="container">
+        <header>
+            <div class="header-nav">
+            <div className="menunav">
           <div className="closebtn" onClick={()=>{document.querySelector(".menunav").style.display = "none" }}></div>
             <div className="listss">
               <div className="list2">RS-eTron</div>
@@ -53,75 +15,96 @@ export default function Home() {
               <div className="list2">myAudi login</div>
             </div>
         </div>
-          <div className="logo-container">
-            <img className="audi-logo" src="/audi-logo.png"></img>
-          </div>
-          <div className="list-container">
-            <div className="list1">RS-eTron</div>
-            <div className="list1">Models</div>
-            <div className="list1">Discover</div>
-            <div className="list1">myAudi login</div>
-          </div>
-          <div className="menu_logo" onClick={()=>{document.querySelector(".menunav").style.display="block"}}></div>
-        </div>
-        <div className="audi-pricedetail">
-        <div className="RS-2023">2023 Audi RS e-tron® GT</div>
-        <div className="s-price">Starting at $144,900</div>
-        <div className="B-P_G-U">
-          <div className="B-P">Build & price</div>
-          <div className="G-U">Get Audi news & updates</div>
-        </div>
-      </div>
-      </div>
-      <div className="about-cars">
-          <div>
-            <div className="item1">Power</div>
-            <div className="item2">637 HP</div>
-            <div className="item3">With Boost Engaged</div>
-          </div>
-          <div>
-            <div className="item1">Battery size</div>
-            <div className="item2">93 kWh</div>
-            <div className="item3">Gross</div>
-          </div>
-          <div>
-            <div className="item1">0-60 mph in</div>
-            <div className="item2">3.1 sec</div>
-            <div className="item3">With Boost Engaged</div>
-          </div>
-          <div className="a2"></div>
-      </div>
-
-
-
-
-
-     
-      <div className="red-audislider" style={{backgroundImage:`url(${slides[currentIndex].url})`}}>
-          <div className="btn-arrow">
-            <div className="left-btn" onClick={prevSlide}> <svg width="49" height="60" viewBox="0 0 49 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M49 53.5714L13.8478 30L49 6.42857L44.7391 0L0 30L44.7391 60L49 53.5714Z" fill="white"/>
-              </svg>
-           </div>
-
-            <div className="right-btn" onClick={nextSlide}> <svg width="49" height="60" viewBox="0 0 49 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 53.5714L35.1522 30L0 6.42857L4.26087 0L49 30L4.26087 60L0 53.5714Z" fill="white"/>
-                </svg>
+            <div className="logo-container">
+                <img className="audi-logo" src="/audi-logo.png"></img>
             </div>
+            <div className="list-container">
+                <div className="list1">RS-eTron</div>
+                <div className="list1">Models</div>
+                <div className="list1">Discover</div>
+                <div className="list1">myAudi login</div>
+            </div>
+            <div className="menu_logo" onClick={()=>{document.querySelector(".menunav").style.display="block"}}></div>
+            </div>
+        </header>
+        <div>
+            <div className="body">
+                <div className="etron2023">2023 Audi RS e-tron® GT</div>
+                <div className="notice">Notice</div>
+            </div>
+            <div className="txtandimg">
+                <div className="container_small">
+                    <div className="body_txt">Due to ongoing parts shortage issues impacting global production, the availability of some 
+                            equipment, options or features may be limited. Please contact your local Audi Dealer for more
+                            information, and be sure to verify the vehicle you purchase includes all expected features 
+                            and equipment. Thank you for your patience as we work to navigate these limitations.
+                    </div>
+                    <div className="small-div">
+                        <div className="gtquatrodiv">
+                            <div>Base</div>
+                            <div className="starting143">Starting at $ 143,900</div>
+                        </div>
+                        <div className="gtquatroprice">
+                            <div><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5556 18.3333L20.3472 8.54167L18.4028 6.59722L10.5556 14.4444L6.59722 10.4861L4.65278 12.4306L10.5556 18.3333ZM2.77778 25C2.01389 25 1.35972 24.7282 0.815278 24.1847C0.271759 23.6403 0 22.9861 0 22.2222V2.77778C0 2.01389 0.271759 1.35972 0.815278 0.815278C1.35972 0.271759 2.01389 0 2.77778 0H22.2222C22.9861 0 23.6403 0.271759 24.1847 0.815278C24.7282 1.35972 25 2.01389 25 2.77778V22.2222C25 22.9861 24.7282 23.6403 24.1847 24.1847C23.6403 24.7282 22.9861 25 22.2222 25H2.77778ZM2.77778 22.2222H22.2222V2.77778H2.77778V22.2222Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div>RS e-tron GT quattro</div>
+                            <div> $ 143,900</div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
 
-          </div>
-      </div>
 
-
-      <div className="detail-shop">
-        <div className="shopaudi2023">Shop the 2023 Audi RS e-tron GT.</div>
-        <div className="audi-img"></div>
-        <div className="buildprice_detail">
-            <div className="build-btn" >Build & price</div>
-            <div className="contactdellear-btn">Contact dealer</div>
+                 <div className="audibackimg"></div>
+            </div>
+            
         </div>
-      </div>
-      <div className="lastdiv" >
+        <div className="extdiv">
+            <div className="ext">Exterior</div>
+            <div className="audiextimg"></div>
+            <div className="extcolors">Exterior colors</div>
+            <div className="colors">
+                <div className="t1"></div>
+                <br></br>
+                <div className="t2"></div>
+                <br></br>
+                <div className="t4"></div>
+                <br></br>
+                <div className="t5"></div>
+                <br></br>
+                <div className="t6"></div>
+                <br></br>
+                <div className="t7"></div>
+                <br></br>
+                <div className="t8"></div>
+                <br></br>
+                <div className="t9"></div>
+            </div>
+            <div className="inter"></div>
+            <div className="intercontainer">
+                <div>Seats: Black, Dashboard: Black,
+                     Carpet: Black, Headliner: Black
+                </div>
+                <div className="int">
+                    <div className="c1"></div>
+                    <div className="c2"></div>
+                    <div className="c3"></div>
+                    <div className="c4"></div>
+                    <div className="c5"></div>
+                </div>
+            </div>
+        </div>
+        <div className="penultimate">
+            <div className="penultimate_txt">
+                <div>RS e-tron GT quattro</div>
+                <div className="penultimate_price">$ 143,900</div>
+            </div>
+            <div className="summary_btn">summary</div>
+        </div>
+        <div className="lastdiv" >
           <div className="audi-lg"></div>
           <div className="text">Audi of America takes efforts to ensure the accuracy of information on the general
              vehicle information pages. Models are shown for illustration purposes
@@ -129,12 +112,12 @@ export default function Home() {
                As errors may occur or availability
              may change, please see dealer for complete details
               and current model specifications.</div>
-          <div className="modelsdiv">
+          <div className="divs">
             <div>Explore</div>
             <div className="size">Models</div>
             <div>Audi Sport</div>
           </div>
-          <div className="modelsdiv">
+          <div className="divs">
             <div>Support</div>
             <div className="size">Contact us</div>
             <div>Help</div>
@@ -170,5 +153,6 @@ export default function Home() {
         </div>
       </div>
       
-  </div>
-};
+        
+    </div>
+}

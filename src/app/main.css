@@ -1,0 +1,800 @@
+/* Base Styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: -1px 15px;
+}
+
+/* Global Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    word-wrap: break-word;
+}
+
+/* Flexbox and Grid */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1 1 auto;
+    max-width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Collapsible Sections */
+.collapsible-container {
+    width: 70%;
+    color: white;
+    overflow: hidden;
+    margin: 0 auto 1em auto;
+}
+
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 45px;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+/* Specific Classes */
+.back_img {
+    background-image: url("/audi_walpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 815px;
+}
+
+.audi-logo {
+    width: 167px;
+    height: 94px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 7% 0 7%;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    margin-left: 41%;
+}
+
+.list1 {
+    padding-right: 19px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.list1:hover {
+    color: aqua;
+}
+
+.audi-pricedetail {
+    padding: 3% 7%;
+}
+
+.RS-2023 {
+    color: white;
+    font-size: 32px;
+}
+
+.s-price {
+    color: white;
+    font-size: 20px;
+}
+
+.B-P_G-U {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.B-P,
+.G-U {
+    width: 200px;
+    height: 80px;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 1.7% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.B-P {
+    background: white;
+    color: black;
+}
+
+.G-U {
+    border: 2px solid white;
+    color: #fff;
+    margin-left: 2%;
+}
+
+.about-cars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 15%;
+    height: 180px;
+    margin: 0 0 0 8%;
+}
+
+.item1 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.item2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.item3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.a2 {
+    height: 140px;
+    background-color: white;
+}
+
+.red-audislider {
+    background-image: url("/red-audi.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 686px;
+    position: relative;
+}
+
+.btn-arrow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-btn,
+.right-btn {
+    background: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-shop {
+    margin: 12% 19%;
+}
+
+.shopaudi2023 {
+    font-size: 55px;
+}
+
+.audi-img {
+    background-image: url("/whiteaudii.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 770px;
+    margin: -16% 0;
+}
+
+.buildprice_detail {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20%;
+}
+
+.build-btn,
+.contactdellear-btn {
+    background: black;
+    color: white;
+    width: 201px;
+    height: 80px;
+    border-radius: 19px;
+    padding: 3.2% 3%;
+    font-size: 20px;
+}
+
+.lastdiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.audi-lg {
+    background-image:url("/audi-logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 167px;
+    height: 94px;
+}
+
+.text {
+    font-size: 12px;
+    max-width: 361px;
+}
+
+.sociallogo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30%;
+}
+
+.size {
+    margin: 22% 0;
+    font-size: 12px;
+}
+
+.sociallogodiv {
+    margin: 1% 0;
+}
+
+.aoa {
+    margin-left: 40%;
+    margin-top: 5%;
+    color: #1E2833;
+    font-size: 15px;
+}
+
+.subscribe {
+    font-size: 48px;
+    margin: 6% 0 0 28%;
+}
+
+.instalogo,
+.gmaillogo,
+.youtubelogo,
+.plogo {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instalogo {
+    background-image: url("/instlogo.png");
+}
+
+.gmaillogo {
+    background-image: url("/gmaillogo.png");
+}
+
+.youtubelogo {
+    background-image: url("/youtubelogo.png");
+}
+
+.plogo {
+    background-image: url("/plogo.png");
+}
+
+.socialweblogo {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 40% 0;
+}
+.modelsdiv{
+    font-size: 17px;
+}
+
+
+.menunav{
+    position: fixed;
+    top: 0px;
+    right: 1px;
+    width: 300px;
+    background-color: #1a1e1f;
+    color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+    height: 100%;
+    display: none;
+
+}
+
+.closebtn{
+    background-image: url("/closebtn.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 43px;
+    margin-left: 85%;
+    margin-top: 1%;
+}
+
+.listss{
+    margin: 19% 0 0 11%;
+}
+
+.list2{
+    margin: 9%;
+    font-size: 19px;
+}
+
+
+/* Responsive Text */
+
+@media (max-width:1680px) {
+    .audi-logo {
+        width: 202px;
+        height: 116px;
+    }
+    .list-container {
+        font-size: 24px;
+    }
+    .G-U {
+        width: 231px;
+    }
+    .back_img {
+        height: 704px;
+    }
+    .red-audislider {
+        height: 863px;
+    }
+    .shopaudi2023 {
+        margin-left: 23%;
+    }
+    .audi-img {
+        height: 619px;
+    }
+    .socialweblogo {
+        margin: 3% 35% 0 28%;
+    }
+}
+
+@media (max-width: 1440px){
+    .red-audislider {
+        height: 762px;
+    }
+
+    .shopaudi2023 {
+        margin-left: 13%;
+        font-size: 41px;
+    }
+    .audi-img{
+        width: 105%;
+        margin-left: -11%;
+        margin-top: -9%;
+    }
+
+    .buildprice_detail{
+        margin-left: 3%;
+    }
+
+    .socialweblogo {
+        margin: 3% 30% 0 33%;
+    }
+}
+
+@media (max-width: 1280px){
+    .about-cars {
+        margin-left: 8%;
+    }
+    .audi-img {
+        width: 116%;
+        margin-left: -15%;
+    }
+    .subscribe {
+        margin: 6% 0 0 24%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+   .list-container {
+         font-size: 17px;
+    }
+     .audi-pricedetail {
+        padding: 6% 7%;
+    }
+    .about-cars{
+        padding: 0 0 0 12%;
+    }
+    .shopaudi2023 {
+        font-size: 36px;
+    }
+    .audi-img{
+        height: 366px;
+        margin: -11% -15px;
+    }
+
+    .buildprice_detail {
+        margin-left: 0%;
+    }
+    .build-btn,.contactdellear-btn{
+        padding: 4.2% 6%;
+        font-size: 17px;
+    }
+    .aoa {
+        margin-left: 35%;
+        margin-top: 6%;
+    }
+    .subscribe {
+        font-size: 30px;
+        margin: 6% 0 0 26%;
+    }
+    .socialweblogo{
+        margin: 3% 36% 0;
+    }
+    .buildprice_detail{
+        margin-top: 7%;
+    }
+} 
+
+@media (max-width: 912px){
+    .about-cars {
+        padding: 0 0 0 5%;
+    }
+    .red-audislider {
+        height: 614px;
+    }
+    .socialweblogo {
+        margin: 3% 34% 0;
+    }
+    .shopaudi2023 {
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width:820px){
+    .red-audislider {
+        height: 540px;
+    }
+    .shopaudi2023 {
+        font-size: 26px;
+    }
+    .socialweblogo {
+        margin: 3% 31% 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .G-U {
+        width: 219px;
+    }
+    .red-audislider {
+        height: 710px;
+    }
+    .audi-img {
+        height: 539px;
+        margin: -11% -20%;
+    }
+    .list-container {
+        font-size: 17px;
+    }
+
+    .audi-logo {
+        width: 155px;
+        height: 84px;
+    }
+    .audi-pricedetail {
+        padding: 6% 7%;
+    }
+    .back_img {
+        height: 605px;
+    }
+
+    .red-audislider{
+        height: 521px;
+    }
+    .shopaudi2023 {
+        font-size: 28px;
+    }
+    .audi-img{
+        width: 134%;
+        height: 428px;
+        margin: -16% -117px;
+    }
+
+    .buildprice_detail {
+        margin-left: 4%;
+    }
+
+    .text {
+        font-size: 9px;
+        max-width: 360px;
+    }
+    .modelsdiv{
+        font-size: 12px;
+    }
+    .sociallogodiv{
+        font-size: 12px;
+    }
+    .aoa {
+        margin-left: 31%;
+    }
+    .subscribe {
+        font-size: 27px;
+        margin: 6% 0 0 25%;
+    }
+    .socialweblogo {
+        margin: 3% 30% 0;
+    }
+    .shopaudi2023 {
+        font-size: 25px;
+    }
+}
+
+
+
+
+@media (max-width: 540px){
+    .list-container{
+        display: none;
+    }
+    .menu_logo{
+        background-image: url("/menulg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 43px;
+       
+    }
+    
+    .audi-pricedetail {
+        padding: 11% 7%;
+    }
+    .item1 {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .item2 {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .red-audislider {
+        height: 250px;
+    }
+
+    .shopaudi2023 {
+        font-size: 14px;
+    }
+    .audi-img {
+        width: 154%;
+        height: 288px;
+    }
+    .build-btn,.contactdellear-btn{
+        height: 62px;
+        font-size: 16px;
+    }
+
+    .text{
+        width: 26%;
+        font-size: 6px;
+    }
+
+    .audi-lg{
+        width: 128px;
+        height: 71px;
+    }
+    .modelsdiv {
+        font-size: 9px;
+    }
+    .size {
+        font-size: 9px;
+    }
+
+    .FU{
+        font-size: 9px;
+    }
+    .aoa {
+        margin-left: 19%;
+    }
+
+    .subscribe {
+        font-size: 16px;
+        margin: 6% 0 0 25%;
+    }
+    .socialweblogo {
+        margin: 2% 19% 0;
+    }
+    
+}
+
+@media (max-width: 430px){
+    .detail-shop {
+        margin: 11% 18%;
+    }
+    .build-btn, .contactdellear-btn {
+        height: 48px;
+        font-size: 15px;
+    }
+    .build-btn, .contactdellear-btn {
+        padding: 4.2% 5%;
+    }
+}
+
+
+@media (max-width: 412px){
+    .build-btn, .contactdellear-btn {
+        height: 48px;
+        font-size: 15px;
+        padding: 4.2% 4%;
+    }
+
+    .aoa {
+        margin-left: 14%;
+    }
+    .subscribe {
+        margin: 6% 0 0 23%;
+    }
+    .audi-img {
+        width: 162%;
+    }
+}
+
+
+@media (max-width: 390px){
+    .RS-2023 {
+    font-size: 23px;
+    }
+
+    .s-price {
+        font-size: 17px;
+    }
+    .B-P, .G-U {
+        width: 195px;
+        height: 58px;
+        font-size: 17px;
+        
+    }
+
+    .build-btn, .contactdellear-btn {
+        height: 48px;
+        font-size: 14px;
+        padding: 5.2% 4%;
+    }
+    .aoa {
+        font-size: 14px;
+    }
+
+    .subscribe {
+        font-size: 14px;
+    }
+    .instalogo, .gmaillogo, .youtubelogo, .plogo {
+        width: 48px;
+        height: 47px;
+    }
+
+    .socialweblogo {
+        margin: 2% 25% 0;
+    }
+}
+
+@media (max-width: 375px){
+    .item1 {
+        font-size: 15px;
+    }
+
+    .item2 {
+        font-size: 16px;
+    }
+    .item3 {
+        font-size: 13px;
+    }
+    .shopaudi2023 {
+        font-size: 12px;
+    }
+    .audi-img {
+        width: 176%;
+    }
+    .build-btn, .contactdellear-btn {
+        padding: 5.2% 3%;
+    }
+
+    .audi-lg {
+        width: 100px;
+        height: 47px;
+    }
+}
+
+@media (max-width: 280px) {
+    .audi-logo {
+        width: 103px;
+        height: 65px;
+    }
+
+    .menu_logo {
+        width: 33px;
+        height: 37px;
+    }
+
+    .RS-2023 {
+        font-size: 20px;
+    }
+    .B-P, .G-U {
+        width: 193px;
+        height: 58px;
+        font-size: 14px;
+    }
+    .about-cars {
+        padding: 0 0 0 10%;
+        margin: 0 -2%;
+    }
+    .red-audislider {
+        height: 167px;
+    }
+    .shopaudi2023 {
+        font-size: 9px;
+    }
+    .audi-img {
+        width: 178%;
+        height: 206px;
+        margin-left: -45%;
+    }
+    .build-btn, .contactdellear-btn {
+        font-size: 10px;
+    }
+    .build-btn, .contactdellear-btn {
+        height: 34px;
+    }
+    .audi-lg {
+        width: 70px;
+        height: 30px;
+    }
+
+    .text {
+        font-size: 4px;
+    }
+    .aoa {
+        font-size: 10px;
+    }
+    .subscribe {
+        margin: 6% 0 0 13%;
+    }
+    .instalogo, .gmaillogo, .youtubelogo, .plogo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
